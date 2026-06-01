@@ -22,7 +22,7 @@ if uploaded_file:
             res = requests.post(
                 API_URL,
                 json={"features": features, "target": target},
-                timeout=10
+                timeout=1600
             ).json()
  
             results.append({
